@@ -1,0 +1,74 @@
+.accordion {
+  &-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  &-item:nth-child(2),
+  &-item:nth-child(3) {
+    border-top: none;
+  }
+  &-item:nth-child(1),
+  &-item:nth-child(2) {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+  }
+  &-item:nth-child(2),
+  &-item:nth-child(3) {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+  }
+
+  &-item.active {
+    .accordion-body {
+      height: 200px;
+      padding: 16px;
+    }
+    .accordion-header {
+      color: #0c63e4;
+      background-color: #e7f1ff;
+    }
+    .accordion-header::before {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+  &-header {
+    font: inherit;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    &::before {
+      content: "^";
+      transition: transform 0.2s ease-in-out;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      font-size: 14px;
+    }
+  }
+  &-body {
+    position: relative;
+    height: 0;
+    padding: 0px 16px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+}
+.accordion-flush {
+  background-color: #f8f9fa;
+  .accordion-item {
+    border: unset;
+    background-color: white;
+  }
+  .accordion-item.active {
+    .accordion-header {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  .accordion-body {
+    border-bottom: 1px solid #ccc;
+  }
+}

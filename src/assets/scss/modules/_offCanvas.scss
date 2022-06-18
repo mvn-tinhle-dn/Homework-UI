@@ -1,0 +1,70 @@
+.offcanvas {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  z-index: 5;
+  background-color: #fff;
+  bottom: 0;
+  transition: transform 0.3s ease-in-out;
+  &-header {
+    padding: 12px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-body {
+    padding: 12px;
+    & .collapse {
+      height: auto;
+    }
+  }
+  &.show {
+    transform: translate(0);
+  }
+}
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+.offcanvas-start {
+  top: 0;
+  left: 0;
+  width: 400px;
+  border-right: 1px solid #ccc;
+  transform: translateX(-100%);
+}
+.offcanvas-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: unset;
+  height: 200px;
+  border-bottom: 1px solid #ccc;
+  transform: translateY(-100%);
+}
+.offcanvas-bottom {
+  left: 0;
+  right: 0;
+  height: 200px;
+  border-top: 1px solid #ccc;
+  transform: translateY(100%);
+}
+.offcanvas-end {
+  top: 0;
+  right: 0;
+  width: 400px;
+  border-left: 1px solid #ccc;
+  transform: translateX(100%);
+}

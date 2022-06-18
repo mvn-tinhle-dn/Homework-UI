@@ -1,0 +1,23 @@
+.collapse {
+  position: relative;
+  height: 0;
+  padding: 0px 16px;
+  overflow: hidden;
+  transition: height 0.6s ease;
+  overflow-y: auto;
+  &.show-collapse {
+    height: 100px;
+  }
+}
+.collapse-horizontal {
+  opacity: 1;
+  transition: opacity linear 0.3s, width linear 0.3s;
+  &.show-collapse {
+    width: 0;
+    opacity: 0;
+  }
+  .card {
+    height: 89px;
+    overflow-y: hidden;
+  }
+}

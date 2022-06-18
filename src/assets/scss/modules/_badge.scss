@@ -1,0 +1,54 @@
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 1;
+  &-notifi {
+    top: -6px;
+    left: 90%;
+    padding: 6px;
+    border-radius: 68px;
+    font-size: 12px;
+  }
+  &-heading {
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+.bg-primary {
+  background-color: $primary-color !important;
+}
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
+.bg-success {
+  background-color: $success-color !important;
+}
+.bg-danger {
+  background-color: $danger-color !important;
+}
+.bg-warning {
+  background-color: $warning-color !important;
+}
+.bg-info {
+  background-color: $info-color !important;
+}
+.bg-light {
+  background-color: $light-color !important;
+}
+.bg-dark {
+  background-color: $dark-color !important;
+}
+.text-dark {
+  color: #212529;
+}
+.rounded-pill {
+  border-radius: 68px;
+}
+.visually-hidden {
+  display: none;
+}

@@ -1,0 +1,170 @@
+.list-group {
+  display: flex;
+  flex-direction: column;
+  &-item {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #00000026;
+    & + .list-group-item {
+      border-top: unset;
+    }
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    &.active {
+      background-color: $primary-color;
+      color: #fff;
+    }
+    &.disable {
+      opacity: 0.5;
+      cursor: auto;
+    }
+  }
+  a[href] {
+    display: block;
+    color: currentColor;
+    &.active {
+      color: #fff;
+    }
+    &:not(.active, .disable):hover {
+      background-color: #f8f9fa;
+    }
+  }
+  button[type="button"] {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: currentColor;
+    &.active {
+      color: #fff;
+    }
+    &:not(.active, button:disabled):hover {
+      background-color: #f8f9fa;
+    }
+  }
+  //flush
+  &.list-group-flush {
+    .list-group-item {
+      border: unset;
+      border-bottom: 1px solid #00000026;
+      &:last-child {
+        border: unset;
+      }
+    }
+  }
+  //numbered
+  &.list-group-numbered {
+    counter-reset: increment;
+    & > li::before {
+      counter-increment: increment;
+      content: counter(increment) ". ";
+    }
+  }
+  //horizontal
+
+  &.list-group-horizontal,
+  &.list-group-horizontal-sm,
+  &.list-group-horizontal-md {
+    flex-direction: row;
+
+    .list-group-item {
+      border: unset;
+      border-radius: unset;
+      border: 1px solid #00000026;
+      &:first-child {
+        border-right: unset;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+      &:last-child {
+        border-left: unset;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+  //color
+  &,
+  &.list-group-horizontal {
+    .list-group-item {
+      &-primary {
+        background-color: $primary-bland-color;
+        color: $primary-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+      &-secondary {
+        background-color: $secondary-bland-color;
+        color: $secondary-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $secondary-color;
+          color: #fff;
+        }
+      }
+      &-success {
+        background-color: $success-bland-color;
+        color: $success-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $success-color;
+          color: #fff;
+        }
+      }
+      &-danger {
+        background-color: $danger-bland-color;
+        color: $danger-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $danger-color;
+          color: #fff;
+        }
+      }
+      &-warning {
+        background-color: $warning-bland-color;
+        color: $warning-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $warning-color;
+        }
+      }
+      &-info {
+        background-color: $info-bland-color;
+        color: $info-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $info-color;
+        }
+      }
+      &-light {
+        background-color: $light-bland-color;
+        color: $light-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $light-color;
+        }
+      }
+      &-dark {
+        background-color: $dark-bland-color;
+        color: $dark-text-color;
+        &.list-group-item.list-group-item-action:hover,
+        &.active {
+          background-color: $dark-color;
+          color: #fff;
+        }
+      }
+      & .form-check-input {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

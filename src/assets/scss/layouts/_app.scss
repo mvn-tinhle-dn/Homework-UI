@@ -1,0 +1,22 @@
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.site-layout-background.header {
+  background: #001529;
+}
+.ant-layout-content {
+  .site-layout-background {
+    background: #fff;
+    margin-top: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+.ant-menu-title-content {
+  a {
+    background-image: linear-gradient(90deg, #22c1c3, #fdbb2d);
+    background-clip: text;
+    color: transparent;
+  }
+}

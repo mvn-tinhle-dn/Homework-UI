@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import { Layout } from "antd";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./assets/scss/style.scss";
+import SiderCP from "./Layouts/SiderCP";
+import ScrollTop from "./modules/ScrollTop";
+import Home from "./Pages/Home";
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Layout
+      style={{
+        minHeight: "100vh",
+      }}
+    >
+      <SiderCP />
+      <Layout className="site-layout">
+        <Header
+          className="site-layout-background header"
+          style={{
+            padding: 0,
+          }}
+        />
+        <Content
+          style={{
+            margin: "0 16px",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <ScrollTop />
+          <div
+            className="site-layout-background"
+            id="site-layout-background"
+            style={{
+              padding: 24,
+              minHeight: 360,
+            }}
+          >
+            <Routes>
+              <Route path="*" element={<Home />}></Route>
+            </Routes>
+          </div>
+        </Content>
+        <Footer
+          style={{
+            textAlign: "center",
+          }}
+        >
+          Coppy right Bootstrap
+        </Footer>
+      </Layout>
+    </Layout>
   );
 }
 

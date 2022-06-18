@@ -1,0 +1,178 @@
+.btn {
+  padding: 8px 12px;
+  border: unset;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  &:hover {
+    opacity: 0.9;
+  }
+  &-close {
+    font-size: 16px;
+    float: right;
+  }
+  &-closed {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/480px-OOjs_UI_icon_close.svg.png");
+    background-size: 100%;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:disabled {
+      opacity: 0.5;
+    }
+    &.btn-close-white {
+      filter: invert(1);
+    }
+  }
+  &-primary {
+    background-color: $primary-color;
+    &.active {
+      color: #fff;
+      background-color: #0a58ca;
+      border-color: #0a53be;
+    }
+  }
+  &-secondary {
+    background-color: $secondary-color;
+  }
+  &-success {
+    background-color: $success-color;
+  }
+  &-danger {
+    background-color: $danger-color;
+  }
+  &-warning {
+    background-color: $warning-color;
+    color: #000;
+  }
+  &-info {
+    background-color: $info-color;
+    color: #000;
+  }
+  &-light {
+    background-color: $light-color;
+    color: #000;
+  }
+  &-dark {
+    background-color: $dark-color;
+  }
+  &-link {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+  &-link-default {
+    color: #0d6efd;
+    font-weight: 400;
+  }
+  // btn-outline
+  &-outline-primary {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+    &.active {
+      color: #fff;
+      background-color: #0a58ca;
+      border-color: #0a53be;
+    }
+  }
+  &-outline-secondary {
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    &:hover {
+      background-color: $secondary-color;
+      color: white;
+    }
+  }
+  &-outline-success {
+    border: 1px solid $success-color;
+    color: $success-color;
+    &:hover {
+      background-color: $success-color;
+      color: white;
+    }
+  }
+  &-outline-danger {
+    border: 1px solid $danger-color;
+    color: $danger-color;
+    &:hover {
+      background-color: $danger-color;
+      color: white;
+    }
+    &.active {
+      color: #fff;
+      background-color: $danger-color;
+    }
+  }
+  &-outline-warning {
+    border: 1px solid $warning-color;
+    color: $warning-color;
+    &:hover {
+      background-color: $warning-color;
+      color: black;
+    }
+  }
+  &-outline-info {
+    border: 1px solid $info-color;
+    color: $info-color;
+    &:hover {
+      background-color: $info-color;
+      color: black;
+    }
+  }
+  &-outline-light {
+    border: 1px solid $light-color;
+    color: $light-color;
+    &:hover {
+      background-color: $light-color;
+      color: black;
+    }
+  }
+  &-outline-dark {
+    border: 1px solid $dark-color;
+    color: $dark-color;
+    &:hover {
+      background-color: $dark-color;
+      color: white;
+    }
+  }
+  //Large button
+  &-lg {
+    padding: 12px;
+  }
+  //Small button
+  &-sm {
+    padding: 6px;
+    font-size: 14px;
+  }
+  //block button
+  &-block {
+    display: block;
+    width: 100%;
+    margin: 6px;
+  }
+}
+a.btn {
+  display: inline-block;
+}
+.disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: unset;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}

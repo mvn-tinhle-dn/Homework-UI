@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > * {
+  padding: 0 12px;
+}
+.col-2 {
+  width: 16.6666667%;
+}
+.col-2-5 {
+  width: 20%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333333%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-8 {
+  width: 66.6666667%;
+}
+.col-12 {
+  width: 100%;
+}

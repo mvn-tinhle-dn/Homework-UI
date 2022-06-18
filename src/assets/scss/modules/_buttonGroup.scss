@@ -1,0 +1,114 @@
+.btn-group {
+  display: inline-flex;
+  position: relative;
+
+  & > .btn {
+    border-radius: unset;
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  & > label.btn {
+    border-radius: unset;
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    &:nth-last-child(2) {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  & > .btn-group > .btn {
+    border-radius: unset;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+  & > * {
+    &:last-child {
+      .btn {
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+      }
+    }
+  }
+}
+//group vertical
+.btn-group-vertical {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  & > .btn {
+    min-width: 128px;
+    border-radius: unset;
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  & > label.btn {
+    border-radius: unset;
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    &:nth-last-child(2) {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  //dropdown in button-group-vertical
+  & > * {
+    &:last-child {
+      .btn {
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+      }
+    }
+  }
+  & > .btn-group {
+    & > #btn-toggle {
+      border-radius: unset;
+      min-width: 128px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+.input-group-text {
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  background-color: #ccc;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.input-group > .form-control {
+  border: 1px solid #ccc;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-left: 8px;
+}
+
+#btn-toggle::after {
+  content: "+";
+  margin: 0 6px;
+}

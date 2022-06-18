@@ -1,0 +1,213 @@
+.card {
+  position: relative;
+  width: 286px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  &-img-top,
+  &-img-bottom {
+    width: 100%;
+    height: 186px;
+    object-fit: contain;
+    background-color: #ccc;
+  }
+  &-body {
+    padding: 16px;
+  }
+  &-title {
+    margin-bottom: 6px;
+    line-height: 1;
+  }
+  &-text {
+    margin-bottom: 6px;
+  }
+  &-subtitle {
+    margin: -4px 0 8px 0;
+    color: #6c757d;
+  }
+  &-link {
+    text-decoration: underline;
+  }
+  &-img-overlay {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    left: 16px;
+    bottom: 16px;
+  }
+  //Horizontal
+  &.horizontal {
+    .row > * {
+      padding: 0;
+    }
+  }
+  .list-group {
+    border-radius: 4px;
+    &-item {
+      border: unset;
+      padding: 8px 16px;
+      &:first-child {
+        border-bottom: 1px solid #ccc;
+      }
+      &:last-child {
+        border-top: 1px solid #ccc;
+      }
+    }
+    &.list-group-flush {
+      .list-group-item {
+        &:first-child {
+          border-top: 1px solid #ccc;
+        }
+        &:last-child {
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+  }
+  &-header {
+    border-bottom: 1px solid #00000026;
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  &-footer {
+    border-top: 1px solid #00000026;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  .blockquote {
+    font-size: 20px;
+    &-footer {
+      color: #6c757d;
+      font-size: 16px;
+      &::before {
+        content: "-";
+      }
+    }
+  }
+  //header nav
+  .nav {
+    margin-bottom: -9px;
+    display: flex;
+    flex-wrap: wrap;
+    &-link {
+      display: block;
+      padding: 6px 12px;
+      &:not(.active, .disabled):hover {
+        border: 1px solid #ccc;
+        border-bottom: unset;
+        opacity: 0.5;
+        border-radius: 4px;
+      }
+      &.active {
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-bottom: unset;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+      &.disabled {
+        color: #6c757d;
+        border: unset;
+      }
+    }
+    &.nav-pill {
+      margin-bottom: 0;
+      .nav-link {
+        display: block;
+        padding: 6px 12px;
+        &:not(.active, .disabled):hover {
+          border: unset;
+          opacity: 0.7;
+        }
+        &.active {
+          color: #fff;
+          background-color: $primary-color;
+          border: 1px solid #ccc;
+          border-bottom: unset;
+          border-radius: 4px;
+        }
+        &.disabled {
+          color: #6c757d;
+          border: unset;
+        }
+      }
+    }
+  }
+  //Card styles
+  //solid #f7f7f7
+  &-outline-primary,
+  &-outline-secondary,
+  &-outline-success,
+  &-outline-danger,
+  &-outline-warning,
+  &-outline-info,
+  &-outline-light,
+  &-outline-dark {
+    .card-header {
+      background-color: #f7f7f7;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    .card-header.bg-transparent {
+      background-color: transparent;
+    }
+    .card-footer.bg-transparent {
+      background-color: transparent;
+    }
+  }
+  &-outline-primary {
+    border: 1px solid $primary-color;
+    color: $primary-text-color;
+  }
+  &-outline-secondary {
+    border: 1px solid $secondary-color;
+    color: $secondary-text-color;
+  }
+  &-outline-success {
+    border: 1px solid $success-color;
+    color: $success-text-color;
+  }
+  &-outline-danger {
+    border: 1px solid $danger-color;
+    color: $danger-text-color;
+  }
+  &-outline-warning {
+    border: 1px solid $warning-color;
+    color: $warning-text-color;
+  }
+  &-outline-info {
+    border: 1px solid $info-color;
+    color: $info-text-color;
+  }
+  &-outline-light {
+    border: 1px solid $light-color;
+    color: $light-text-color;
+  }
+  &-outline-dark {
+    border: 1px solid $dark-color;
+    color: $dark-text-color;
+  }
+}
+.card-group {
+  &.row {
+    & > * {
+      padding: 0;
+    }
+  }
+  .card:not(.card:first-child) {
+    border-left: unset;
+  }
+  .card:not(.card:first-child, .card:last-child) {
+    border-radius: unset;
+  }
+  .card:first-child {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+  }
+  .card:last-child {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+}
