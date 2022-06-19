@@ -30,7 +30,7 @@ function Toasts() {
           className="position-fixed bottom-0 end-0 mr-2 mb-2"
           style={{ zIndex: 5 }}
         >
-          <div ref={liveToast} id="liveToast" className="toast">
+          <div ref={liveToast} id="live-toast" className="toast">
             <div className="toast-header">
               <img
                 src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"
@@ -114,7 +114,7 @@ function Toasts() {
       <div className="content">
         <ToastSelect></ToastSelect>
       </div>
-      <div className="content position-relative bg-dark" id="toastSelect">
+      <div className="content position-relative bg-dark" id="toast-select">
         <div
           className={`position-absolute top-50 end-0 translate-middle-y m-2 `}
           style={{ zIndex: 5 }}
@@ -127,7 +127,7 @@ function Toasts() {
       </div>
       <div
         className="content bg-dark d-flex justify-content-center align-items-center"
-        id="toastSelect"
+        id="toast-select"
       >
         <ToastCP>Hello, world! This is a toast message.</ToastCP>
       </div>

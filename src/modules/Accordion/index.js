@@ -14,7 +14,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
           <AccordionCP heading={"Accordion Item #2"}>
@@ -24,7 +24,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
           <AccordionCP heading={"Accordion Item #3"}>
@@ -34,7 +34,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
         </div>
@@ -49,7 +49,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
           <AccordionCP heading={"Accordion Item #2"}>
@@ -59,7 +59,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
           <AccordionCP heading={"Accordion Item #3"}>
@@ -69,7 +69,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
         </div>
@@ -84,7 +84,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
           <AccordionCP heading={"Accordion Item #2"}>
@@ -94,7 +94,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
           <AccordionCP heading={"Accordion Item #3"}>
@@ -104,7 +104,7 @@ function Accordion() {
             overall appearance, as well as the showing and hiding via CSS
             transitions. You can modify any of this with custom CSS or
             overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
+            about any HTML can go within the <span>.accordion-body</span>,
             though the transition does limit overflow.
           </AccordionCP>
         </div>

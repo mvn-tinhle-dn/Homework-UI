@@ -48,13 +48,13 @@ function ButtonGroup() {
       <h2>Checkbox and radio button groups</h2>
       <div className="content">
         <div className="btn-group">
-          <InputButton status="outline-primary" active={true} id="btnCheck1">
+          <InputButton status="outline-primary" active={true} id="btn-check1">
             Checkbox 1
           </InputButton>
-          <InputButton status="outline-primary" active={true} id="btnCheck2">
+          <InputButton status="outline-primary" active={true} id="btn-check2">
             Checkbox 2
           </InputButton>
-          <InputButton status="outline-primary" active={true} id="btnCheck2">
+          <InputButton status="outline-primary" active={true} id="btn-check3">
             Checkbox 3
           </InputButton>
         </div>
@@ -65,7 +65,7 @@ function ButtonGroup() {
             status="outline-primary"
             active={true}
             type="radio"
-            id="btnCheck1"
+            id="btn-check1"
           >
             Checkbox 1
           </InputButton>
@@ -73,7 +73,7 @@ function ButtonGroup() {
             status="outline-primary"
             active={true}
             type="radio"
-            id="btnCheck2"
+            id="btn-check2"
           >
             Checkbox 2
           </InputButton>
@@ -81,7 +81,7 @@ function ButtonGroup() {
             status="outline-primary"
             active={true}
             type="radio"
-            id="btnCheck2"
+            id="btn-check3"
           >
             Checkbox 3
           </InputButton>
@@ -172,13 +172,13 @@ function ButtonGroup() {
       <h2>Vertical variation</h2>
       <div className="content">
         <div className="btn-group-vertical">
-          <InputButton status="outline-danger" active={true} id="btnCheck1">
+          <InputButton status="outline-danger" active={true} id="btn-check1">
             Checkbox 1
           </InputButton>
-          <InputButton status="outline-danger" active={true} id="btnCheck2">
+          <InputButton status="outline-danger" active={true} id="btn-check2">
             Checkbox 2
           </InputButton>
-          <InputButton status="outline-danger" active={true} id="btnCheck2">
+          <InputButton status="outline-danger" active={true} id="btn-check3">
             Checkbox 3
           </InputButton>
         </div>

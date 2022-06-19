@@ -30,12 +30,12 @@ function ToastSelect() {
           <option value="bottom-0 end-0">Bottom right</option>
         </select>
       </div>
-      <div className="content position-relative bg-dark " id="toastSelect">
+      <div className="content position-relative bg-dark " id="toast-select">
         <div
           className={`position-absolute ${classToast} m-2 `}
           style={{ zIndex: 5 }}
         >
-          <div id="liveToast" className="toast show">
+          <div id="live-toast" className="toast show">
             <div className="toast-header">
               <img
                 src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"

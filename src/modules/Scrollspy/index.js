@@ -73,17 +73,17 @@ function Scrollspy() {
       <h2>Example in navbar</h2>
       <div className="content">
         <nav id="navbar-example2" className="navbar navbar-light bg-light px-3">
-          <a className="navbar-brand" href="#scrollspyHeading1">
+          <a className="navbar-brand" href="#scrollspy-heading1">
             Navbar
           </a>
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a className="nav-link align-center" href="#scrollspyHeading1">
+              <a className="nav-link align-center" href="#scrollspy-heading1">
                 First
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#scrollspyHeading2">
+              <a className="nav-link" href="#scrollspy-heading2">
                 Seconds
               </a>
             </li>
@@ -95,10 +95,10 @@ function Scrollspy() {
                   itemMore={
                     <>
                       <li className="dropdown-item">
-                        <a href="#scrollspyHeading3">Third</a>
+                        <a href="#scrollspy-heading3">Third</a>
                       </li>
                       <li className="dropdown-item">
-                        <a href="#scrollspyHeading4">Fourth</a>
+                        <a href="#scrollspy-heading4">Fourth</a>
                       </li>
                     </>
                   }
@@ -108,7 +108,7 @@ function Scrollspy() {
           </ul>
         </nav>
         <div ref={scrollspy} className="scrollspy-example mt-2">
-          <h4 id="scrollspyHeading1">First heading</h4>
+          <h4 id="scrollspy-heading1">First heading</h4>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -116,7 +116,7 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h4 id="scrollspyHeading2">Second heading</h4>
+          <h4 id="scrollspy-heading2">Second heading</h4>
           <p>
             This is some placeholder content for the scrollspy page. Note that
             as you scroll down the page, the appropriate navigation link is
@@ -124,7 +124,7 @@ function Scrollspy() {
             repeated throughout the component example. We keep adding some more
             example copy here to emphasize the scrolling and highlighting.
           </p>
-          <h4 id="scrollspyHeading3">Third heading</h4>
+          <h4 id="scrollspy-heading3">Third heading</h4>
           <p>
             This is some placeholder content for the scrollspy page. Note that
             as you scroll down the page, the appropriate navigation link is
@@ -132,7 +132,7 @@ function Scrollspy() {
             adding some more example copy here to emphasize the scrolling and
             highlighting.
           </p>
-          <h4 id="scrollspyHeading4">Fourth heading</h4>
+          <h4 id="scrollspy-heading4">Fourth heading</h4>
           <p>
             This is some placeholder content for the scrollspy page. Note that
             as you scroll down the page, the appropriate navigation link is
@@ -146,7 +146,7 @@ function Scrollspy() {
       <div className="content d-flex">
         <nav
           id="navbar-example3"
-          className="navbar navbar-light bg-light flex-column align-items-stretch col-12"
+          className="navbar navbar-light bg-light flex-column col-12"
         >
           <a className="navbar-brand" href=".">
             Navbar
