@@ -35,14 +35,7 @@
     animation: pb-animation 5s linear infinite;
   }
 }
-@keyframes animatesStripes {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200px);
-  }
-}
+
 @keyframes pb-animation {
   0% {
     background-position: 1000px;

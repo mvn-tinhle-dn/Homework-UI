@@ -99,18 +99,18 @@ function Spinners() {
       </div>
       <h2>Size</h2>
       <div className="content">
-        <div className="spinner-border spinner-border-sm" role="status">
+        <div className="spinner-border spinner-border-sm">
           <span className="visually-hidden">Loading...</span>
         </div>
-        <div className="spinner-grow spinner-grow-sm" role="status">
+        <div className="spinner-grow spinner-grow-sm">
           <span className="visually-hidden">Loading...</span>
         </div>
       </div>
       <div className="content">
-        <div className="spinner-border spinner-border-lg" role="status">
+        <div className="spinner-border spinner-border-lg">
           <span className="visually-hidden">Loading...</span>
         </div>
-        <div className="spinner-grow spinner-grow-lg" role="status">
+        <div className="spinner-grow spinner-grow-lg">
           <span className="visually-hidden">Loading...</span>
         </div>
       </div>

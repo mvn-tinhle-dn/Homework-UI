@@ -103,7 +103,7 @@
 //bottom
 .content-popover.bottom {
   width: 100%;
-  top: 120%;
+  top: 132%;
   & > * {
     padding: 12px;
   }
@@ -121,17 +121,8 @@
     position: absolute;
     border: 8px solid #ccc;
     border-color: transparent transparent #ccc transparent;
-    bottom: 100%;
+    bottom: 101%;
     left: 50%;
     transform: translateX(-50%);
   }
-}
-.d-inline-block {
-  display: inline-block;
-}
-.d-inline-block .content-popover {
-  display: none;
-}
-.d-inline-block:hover .content-popover {
-  display: block !important;
 }

@@ -6,12 +6,12 @@ function Scrollspy() {
   const scrollspy = useRef();
   useEffect(() => {
     const linkNav = document.querySelectorAll(".nav-link");
-    const h4Head = document.querySelectorAll("h4");
+    const headingScroll = document.querySelectorAll(".heading-scroll");
     function scrollActive() {
-      let len = h4Head.length;
+      let len = headingScroll.length;
       while (
         --len &&
-        scrollspy.current.scrollTop < h4Head[len].offsetTop - 50
+        scrollspy.current.scrollTop < headingScroll[len].offsetTop - 50
       ) {}
       linkNav.forEach((linkItem) => linkItem.classList.remove("active"));
       linkNav[len].classList.add("active");
@@ -26,12 +26,12 @@ function Scrollspy() {
   const item3 = useRef();
   useEffect(() => {
     const linkNav = document.querySelectorAll(".nav-link2");
-    const h3Head = document.querySelectorAll("h3");
+    const headingScroll2 = document.querySelectorAll(".heading-scroll2");
     function scrollVerActive() {
-      let len = h3Head.length;
+      let len = headingScroll2.length;
       while (
         --len &&
-        scrollspyVer.current.scrollTop < h3Head[len].offsetTop - 114
+        scrollspyVer.current.scrollTop < headingScroll2[len].offsetTop - 114
       ) {}
 
       linkNav.forEach((linkItem) => {
@@ -51,12 +51,12 @@ function Scrollspy() {
   const scrollspyListG = useRef();
   useEffect(() => {
     const listItem = document.querySelectorAll(".list-group-item-action");
-    const h5Head = document.querySelectorAll("h5");
+    const headingScroll3 = document.querySelectorAll(".heading-scroll3");
     function scrollVerActive() {
-      let len = h5Head.length;
+      let len = headingScroll3.length;
       while (
         --len &&
-        scrollspyListG.current.scrollTop < h5Head[len].offsetTop - 50
+        scrollspyListG.current.scrollTop < headingScroll3[len].offsetTop - 50
       ) {}
 
       listItem.forEach((Item) => {
@@ -108,7 +108,9 @@ function Scrollspy() {
           </ul>
         </nav>
         <div ref={scrollspy} className="scrollspy-example mt-2">
-          <h4 id="scrollspy-heading1">First heading</h4>
+          <h4 className="heading-scroll" id="scrollspy-heading1">
+            First heading
+          </h4>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -116,7 +118,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h4 id="scrollspy-heading2">Second heading</h4>
+          <h4 className="heading-scroll" id="scrollspy-heading2">
+            Second heading
+          </h4>
           <p>
             This is some placeholder content for the scrollspy page. Note that
             as you scroll down the page, the appropriate navigation link is
@@ -124,7 +128,9 @@ function Scrollspy() {
             repeated throughout the component example. We keep adding some more
             example copy here to emphasize the scrolling and highlighting.
           </p>
-          <h4 id="scrollspy-heading3">Third heading</h4>
+          <h4 className="heading-scroll" id="scrollspy-heading3">
+            Third heading
+          </h4>
           <p>
             This is some placeholder content for the scrollspy page. Note that
             as you scroll down the page, the appropriate navigation link is
@@ -132,7 +138,9 @@ function Scrollspy() {
             adding some more example copy here to emphasize the scrolling and
             highlighting.
           </p>
-          <h4 id="scrollspy-heading4">Fourth heading</h4>
+          <h4 className="heading-scroll" id="scrollspy-heading4">
+            Fourth heading
+          </h4>
           <p>
             This is some placeholder content for the scrollspy page. Note that
             as you scroll down the page, the appropriate navigation link is
@@ -181,7 +189,9 @@ function Scrollspy() {
         </nav>
 
         <div ref={scrollspyVer} className="scrollspy-example ex-2 ml-2 mt-2 ">
-          <h3 id="item-1">Item 1</h3>
+          <h3 className="heading-scroll2" id="item-1">
+            Item 1
+          </h3>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -189,7 +199,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h3 id="item-1-1">Item 1-1</h3>
+          <h3 className="heading-scroll2" id="item-1-1">
+            Item 1-1
+          </h3>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -197,7 +209,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h3 id="item-1-2">Item 1-2</h3>
+          <h3 className="heading-scroll2" id="item-1-2">
+            Item 1-2
+          </h3>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -205,7 +219,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h3 id="item-2">Item 2</h3>
+          <h3 className="heading-scroll2" id="item-2">
+            Item 2
+          </h3>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -213,7 +229,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h3 id="item-3">Item 3</h3>
+          <h3 className="heading-scroll2" id="item-3">
+            Item 3
+          </h3>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -221,7 +239,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h3 id="item-3-1">Item 3-1</h3>
+          <h3 className="heading-scroll2" id="item-3-1">
+            Item 3-1
+          </h3>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -229,7 +249,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h3 id="item-3-2">Item 3-2</h3>
+          <h3 className="heading-scroll2" id="item-3-2">
+            Item 3-2
+          </h3>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -269,7 +291,9 @@ function Scrollspy() {
           </a>
         </div>
         <div ref={scrollspyListG} className="scrollspy-example ml-2 col-8">
-          <h5 id="list-item-1">Item 1</h5>
+          <h5 className="heading-scroll3" id="list-item-1">
+            Item 1
+          </h5>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -277,7 +301,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h5 id="list-item-2">Item 2</h5>
+          <h5 className="heading-scroll3" id="list-item-2">
+            Item 2
+          </h5>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -285,7 +311,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h5 id="list-item-3">Item 3</h5>
+          <h5 className="heading-scroll3" id="list-item-3">
+            Item 3
+          </h5>
           <p>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate
@@ -293,7 +321,9 @@ function Scrollspy() {
             component example. We keep adding some more example copy here to
             emphasize the scrolling and highlighting.
           </p>
-          <h5 id="list-item-4">Item 4</h5>
+          <h5 className="heading-scroll3" id="list-item-4">
+            Item 4
+          </h5>
           <p style={{ height: "169px" }}>
             First heading This is some placeholder content for the scrollspy
             page. Note that as you scroll down the page, the appropriate

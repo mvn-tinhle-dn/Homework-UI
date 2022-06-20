@@ -49,7 +49,7 @@ function NavBehavior({ typeNav, vertical = false, size, sizeBtn }) {
             Home
           </button>
         </li>
-        <li className="nav-item" role="presentation">
+        <li className="nav-item">
           <button
             ref={btnProfile}
             className={`nav-link ${sizeBtn}`}
@@ -60,7 +60,7 @@ function NavBehavior({ typeNav, vertical = false, size, sizeBtn }) {
             Profile
           </button>
         </li>
-        <li className="nav-item" role="presentation">
+        <li className="nav-item">
           <button
             ref={btnContact}
             className={`nav-link ${sizeBtn}`}

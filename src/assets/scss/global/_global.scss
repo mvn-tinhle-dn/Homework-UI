@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,7 +18,6 @@ code {
   margin: 26px;
   border: 1px solid #ccc;
   padding: 16px;
-  // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .container-fluid {
@@ -30,6 +32,7 @@ code {
 span[role="img"] {
   color: #22c1c3;
 }
+//display
 .block {
   display: block;
 }
@@ -42,6 +45,19 @@ span[role="img"] {
 .show {
   display: block !important;
 }
+.d-inline-block {
+  display: inline-block;
+}
+.d-inline-block .content-popover {
+  display: none;
+}
+.d-inline-block:hover .content-popover {
+  display: block !important;
+}
+.float-end {
+  float: right;
+}
+//width
 .width-50 {
   width: 50% !important;
 }
@@ -51,6 +67,7 @@ span[role="img"] {
 .width-full {
   width: 100% !important;
 }
+//text
 .text-center {
   text-align: center;
 }
@@ -89,7 +106,4 @@ span[role="img"] {
 }
 .text-dark {
   color: $dark-color;
-}
-.float-end {
-  float: right;
 }

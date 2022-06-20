@@ -42,7 +42,7 @@ function NavbarOffCanvas() {
           <div className="collapse navbar-collapse external">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href=".">
+                <a className="nav-link active" href=".">
                   Home
                 </a>
               </li>
