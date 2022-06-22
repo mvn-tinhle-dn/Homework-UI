@@ -55,7 +55,7 @@ function Collapse() {
           </ButtonCp>
         </div>
         <div className="collapse-horizontal width-50 mv-2">
-          <div className="card card-body width-full">
+          <div className="card card-body ">
             Some placeholder content for the collapse component. This panel is
             hidden by default but revealed when the user activates the relevant
             trigger.

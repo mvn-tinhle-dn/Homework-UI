@@ -135,6 +135,9 @@
         &.active {
           background-color: $warning-color;
         }
+        &.list-group-item-action.list-group-item-warning.active {
+          color: #000;
+        }
       }
       &-info {
         background-color: $info-bland-color;
@@ -143,6 +146,9 @@
         &.active {
           background-color: $info-color;
         }
+        &.list-group-item-action.list-group-item-info.active {
+          color: #000;
+        }
       }
       &-light {
         background-color: $light-bland-color;
@@ -150,6 +156,9 @@
         &.list-group-item.list-group-item-action:hover,
         &.active {
           background-color: $light-color;
+        }
+        &.list-group-item-action.list-group-item-light.active {
+          color: #000;
         }
       }
       &-dark {

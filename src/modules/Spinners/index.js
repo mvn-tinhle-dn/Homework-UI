@@ -116,12 +116,12 @@ function Spinners() {
       </div>
       <h2>Button</h2>
       <div className="content d-flex align-items-center">
-        <button className="btn btn-primary  mr-2" type="button" disabled>
+        <button className="btn btn-primary d-flex  mr-2" type="button" disabled>
           <span className="spinner-border spinner-border-sm "></span>
           <span className="visually-hidden">Loading...</span>
         </button>
         <button
-          className="btn btn-primary d-inline-flex align-items-center"
+          className="btn btn-primary d-flex align-items-center"
           type="button"
           disabled
         >
@@ -130,12 +130,12 @@ function Spinners() {
         </button>
       </div>
       <div className="content d-flex align-items-center">
-        <button className="btn btn-primary mr-2" type="button" disabled>
+        <button className="btn btn-primary d-flex mr-2" type="button" disabled>
           <span className="spinner-grow spinner-grow-sm"></span>
           <span className="visually-hidden">Loading...</span>
         </button>
         <button
-          className="btn btn-primary d-inline-flex align-items-center"
+          className="btn btn-primary d-flex align-items-center"
           type="button"
           disabled
         >

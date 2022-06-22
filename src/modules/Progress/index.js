@@ -115,6 +115,18 @@ function Progress() {
             style={{ width: "75%" }}
           ></div>
         </div>
+        <div className="progress">
+          <div
+            className="progress-bar progress-bar-stripes progress-bar-animated bg-warning"
+            style={{ width: "50%" }}
+          ></div>
+        </div>
+        <div className="progress">
+          <div
+            className="progress-bar progress-bar-stripes progress-bar-animated bg-danger"
+            style={{ width: "100%" }}
+          ></div>
+        </div>
       </div>
     </>
   );
