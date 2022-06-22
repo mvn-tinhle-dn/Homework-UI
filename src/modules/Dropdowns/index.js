@@ -370,17 +370,11 @@ function Dropdowns() {
           />
           <div className=" width-full mv-2">
             <DropdownCP
-              contentDrop=" DropStart"
-              colorDrop="secondary"
-              itemDrops={["Action", "Another action", "Something else here"]}
-              dropUp="left"
-            />
-            <DropdownCP
               contentDrop=" DropEnd"
               colorDrop="secondary"
               itemDrops={["Action", "Another action", "Something else here"]}
               dropUp="right"
-              margin="mh-2"
+              margin="mr-2"
             />
             <DropdownCP
               contentDrop=" DropDown"
@@ -393,6 +387,12 @@ function Dropdowns() {
               itemDrops={["Action", "Another action", "Something else here"]}
               dropUp="up"
               margin="mh-2"
+            />
+            <DropdownCP
+              contentDrop=" DropStart"
+              colorDrop="secondary"
+              itemDrops={["Action", "Another action", "Something else here"]}
+              dropUp="left"
             />
           </div>
         </div>

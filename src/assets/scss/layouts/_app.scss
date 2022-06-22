@@ -5,11 +5,15 @@
 }
 .site-layout-background.header {
   background: #001529;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 5;
 }
 .ant-layout-content {
   .site-layout-background {
     background: #fff;
-    margin-top: 16px;
+    margin-top: 80px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 }
@@ -19,4 +23,29 @@
     background-clip: text;
     color: transparent;
   }
+}
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
+  .ant-layout-sider-children {
+    position: fixed;
+    width: 200px;
+    z-index: 6;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .ant-layout-sider-trigger {
+    z-index: 6;
+  }
+}
+
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-collapsed.ant-layout-sider-has-trigger {
+  .ant-layout-sider-children {
+    position: fixed;
+    width: 80px;
+    overflow-y: scroll;
+  }
+}
+.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-dark {
+  padding-bottom: 60px;
 }
