@@ -31,7 +31,11 @@ function CardCP({
       >
         {contentHeader}
       </div>
-      <img src={`${src}`} className={`${src ? "" : "hide"}`} alt="..." />
+      <img
+        src={`${src}`}
+        className={`${src ? "" : "hide"} card-image`}
+        alt="..."
+      />
       <div className="card-body">{children}</div>
       <div
         className={`card-footer ${contentFooter ? "" : "hide"} ${

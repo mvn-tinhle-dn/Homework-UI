@@ -17,6 +17,10 @@
   & > .nav.nav-pills > .nav-item {
     &:last-child > .nav-link {
       padding: unset;
+      & .dropdown-menu {
+        padding-left: unset;
+        z-index: 4;
+      }
     }
     & > .nav-link.active {
       color: white;

@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./assets/scss/style.scss";
+import ScrollTo from "./components/ScrollTo";
 import SiderCP from "./Layouts/SiderCP";
 import ScrollTop from "./modules/ScrollTop";
 import Home from "./Pages/Home";
@@ -27,6 +28,7 @@ function App() {
             margin: "0 16px",
           }}
         >
+          <ScrollTo />
           <ScrollTop />
           <div
             className="site-layout-background"
